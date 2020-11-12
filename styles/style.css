@@ -18,6 +18,10 @@ body {
     text-decoration: none;
   }
   
+  button:hover {
+    cursor: pointer;
+  }
+
   .wrap {
     max-width: 1366px;
     margin: 0 auto;
@@ -26,8 +30,12 @@ body {
     align-items: center;
   }
 
-  .block {
-      display: none;
+  .hide {
+    display: none;
+  }
+
+  .active {
+    background-color: lawngreen;
   }
 
   .nav__list {

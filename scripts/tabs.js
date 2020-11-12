@@ -33,3 +33,4 @@ $tab2.addEventListener('click', function(){
     $block1.classList.add('hide');
     $block2.classList.add('hide');
  });
+ 

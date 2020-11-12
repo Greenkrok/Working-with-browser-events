@@ -26,6 +26,10 @@ body {
     align-items: center;
   }
 
+  .block {
+      display: none;
+  }
+
   .nav__list {
       display: flex;
       list-style: none;

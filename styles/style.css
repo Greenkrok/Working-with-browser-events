@@ -17,39 +17,32 @@ body {
   a {
     text-decoration: none;
   }
-  
-  button:hover {
-    cursor: pointer;
-  }
 
   img {
     max-width: 100%;
   }
 
   .wrap {
-    max-width: 1366px;
     margin: 0 auto;
+    max-width: 1366px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .hide {
-    display: none;
+  a.tab {
+    margin: 0.5em;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid;
   }
-
-  .active {
-    background-color: lawngreen;
+  a.tab.active {
+    background: #555;
+    color: #fff;
+    cursor: default;
   }
-
-  .nav__list {
-      display: flex;
-      flex-wrap: wrap;
-      list-style: none;
-  }
-
-  .nav__item {
-      margin: 0.5em;
+  a.tab:not(.active):hover {
+    background: #ccc;
   }
 
   .main__title {
@@ -58,4 +51,15 @@ body {
 
   .main__subtitle {
     text-align: center;
+  }
+
+  .main__item {
+    margin: 1.5em;
+  }
+
+  .box {
+    display: none;
+  }
+  .box.active {
+    display: block;
   }
